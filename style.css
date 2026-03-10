@@ -8,6 +8,7 @@ body {
     line-height: 1.6;
     color: #111827;
     background: radial-gradient(circle at top, #eff6ff 0, #f9fafb 55%, #f3f4f6 100%);
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -102,6 +103,8 @@ body {
 
 .section {
     margin-top: 2rem;
+    /* 让锚点滚动时预留出被粘性导航栏遮挡的高度 */
+    scroll-margin-top: 5.5rem;
 }
 
 .section:first-of-type {
